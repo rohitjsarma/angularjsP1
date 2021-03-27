@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ngControllerWithFunction</title>
+		<script type="text/javascript" src="angular.min.js" ></script>
+	</head>
+	<body ng-app="myapp" ng-controller="c1">
+		<script type="text/javascript">
+			app=angular.module("myapp",[])
+			app.controller("c1",function($scope){
+                $scope.x;
+                $scope.y;
+                $scope.fun1=function(){
+                	alert($scope.x)
+                	alert($scope.y)
+                }
+			})
+		</script>
+		<input type="text" name="" ng-model="x"><br>
+		<input type="text" name="" ng-model="y"><br>
+		<input type="button" name="" value="click" ng-click="fun1()">
+
+	</body>
+</html>

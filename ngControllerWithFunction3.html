@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>controllerFunctionAnd+-*/Operations</title>
+		<script type="text/javascript" src="angular.min.js"></script>
+	</head>
+	<body ng-app="myapp" ng-controller="c1">
+		<script type="text/javascript">
+		var app =angular.module("myapp",[])
+		app.controller("c1",function($scope){
+			$scope.x;
+			$scope.y;
+			$scope.res;
+			$scope.add=function(){
+				$scope.res=	parseInt($scope.x)+parseInt($scope.y)
+			}
+			$scope.sub=function(){
+				$scope.res=	parseInt($scope.x)-parseInt($scope.y)
+			}
+			$scope.mul=function(){
+				$scope.res=	parseInt($scope.x)*parseInt($scope.y)
+			}
+			$scope.div=function(){
+				$scope.res=	parseInt($scope.x)/parseInt($scope.y)
+			}
+
+		})
+		</script>
+		X:<input type="text" name="" ng-model="x">
+		Y:<input type="text" name="" ng-model="y">
+		RES:<input type="text" name="" ng-model="res"><br>
+		<br>
+		<input type="button" name="" value="ADD +" ng-click="add()">
+		<input type="button" name="" value="SUB -" ng-click="sub()">
+		<input type="button" name="" value="MUL *" ng-click="mul()">
+		<input type="button" name="" value="DIV /" ng-click="div()">
+
+	</body>
+</html>

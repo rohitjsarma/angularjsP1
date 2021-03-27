@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ng-Controller With Function</title>
+		<script type="text/javascript" src="angular.min.js"></script>
+	</head>
+	<body ng-app="myApp" ng-controller="c1" >
+		<script type="text/javascript">
+			var app = angular.module("myApp",[])
+			app.controller("c1",function($scope){
+				$scope.x=100;
+				$scope.y=function(){
+                 alert("hello there")
+				}
+			    $scope.z=function(){
+			    	alert("heloo finction z")
+			    }
+
+			})
+			
+		</script>
+		<input type="button" name="" value="click" ng-click="y()" ng-click="z()">
+		<h1 ng-bind="x"></h1>
+ 
+	</body>
+</html>

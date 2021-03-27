@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dropdown</title>
+	<script type="text/javascript"  src="angular.min.js"></script>
+	<style type="text/css">
+		th{
+			background-color: lightblue;
+			color: red;
+		}
+		tr:nth-child(odd){
+			background-color: yellow;
+		}
+		tr{
+			background-color: orange;
+		}
+	</style>
+</head>
+<body ng-app ng-init="y=[
+{name:'raz',city:'HYD'},
+{name:'riya',city:'sec'},
+{name:'rohit',city:'Delhi'}]">
+<table border="1">
+	<th>name</th>
+	<th>city</th>
+	<tr ng-repeat="x in y">
+	<td>{{x.name}}</td>
+	<td>{{x.city}}</td>
+    </tr>
+	
+</table>
+</body>
+</html>

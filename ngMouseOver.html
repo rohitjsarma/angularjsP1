@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ng-MouseOverAndng-MouseOut Example</title>
+		<script type="text/javascript" src="angular.min.js"></script>
+	</head>
+	<body ng-app ng-init="x='../images/deal.jpg'">
+	<img src="{{x}}" width="100%" height="200"  ng-mouseover="x='../images/deal1.jpg'" ng-click="x='../images/deal2.jpg'" ng-mouseout="x='../images/deal.jpg'">
+
+
+	</body>
+</html>

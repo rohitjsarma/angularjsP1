@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ng-controllerWithFunctionsExample</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+</head>
+<body ng-app="myapp" ng-controller="c1">
+	<script type="text/javascript">
+		var app = angular.module("myapp",[])
+		app.controller("c1",function($scope){
+			$scope.x
+			$scope.y
+			$scope.res
+           $scope.fun=function(){
+           	$scope.res=$scope.x*$scope.y
+           }
+		})
+	</script>
+	<input type="text" name="" ng-model="x">
+	<input type="text" name="" ng-model="y">
+	<input type="text" name="" ng-model="res">
+
+	<input type="button" name="" value="Click" ng-click="fun()">
+
+</body>
+</html>

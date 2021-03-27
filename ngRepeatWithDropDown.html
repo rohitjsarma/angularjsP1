@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ngRepeatWithDropDown</title>
+		<script type="text/javascript" src="angular.min.js"></script>
+	</head>
+	<body ng-app ng-init="city=['Hyd','Sec','Vizag','Chennai','Kerala','Bhopal','Patna']">
+		Select the Country :<select>
+			<option ng-repeat="x in city">{{x}}</option>
+		</select>
+
+
+	</body>
+</html>

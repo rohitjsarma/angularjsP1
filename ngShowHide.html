@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ng-Show_And_ng-hide</title>
+		<script type="text/javascript" src="angular.min.js"></script>
+	</head>
+	<body ng-app ng-init="temp=true">
+		<input type="button" name="" value="Hide" ng-click="temp=false" >
+		<input type="button" name="" value="show" ng-click="temp=true"><br>
+		<img src="../images/clock.jpg"  ng-show="temp">
+	</body>
+</html>

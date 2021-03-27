@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ng-If Example</title>
+		<script type="text/javascript" src="angular.min.js"></script>
+	</head>
+	<body ng-app ng-init="x=600;y=200;z=500;temp=true">
+		<h1 ng-if="x>y">
+			x is big.
+		</h1>
+		<h1 ng-if="x<y">
+			y is big.
+		</h1>
+		{{z}}<br>
+		<input type="text" name="" ng-if="temp" ng-model="z">
+
+
+	</body>
+</html>
